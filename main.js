@@ -57,7 +57,11 @@ let pulldown = document.querySelector("#pulldown");
 console.log(pulldown);
 for (let etappe of ETAPPEN){
     //console.log(etappe);
+    let selected = "";
+    if (etappe.nr == 12) {
+        selected = "selected";
+    }
     pulldown.innerHTML += `
-        <option value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>
+        <option ${selected}value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>
     `;
 }
