@@ -73,7 +73,9 @@ pulldown.onchange = function (evt) {
 }
 
 // Instantiate elevation control.
-let controlElevation = L.control.elevation({}).addTo(map);
+const controlElevation = L.control.elevation({
+    theme: "bike-tirol",
+}).addTo(map);
 
 // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
 controlElevation.load("data/etappe12.gpx");
