@@ -77,6 +77,7 @@ const controlElevation = L.control.elevation({
     theme: "bike-tirol",
     time: false,
     elevationDiv: "#profile",
+    //slope: true,
     height: 300,
 }).addTo(map);
 
