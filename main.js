@@ -71,3 +71,9 @@ pulldown.onchange = function (evt) {
     //console.log(evt.target.value);
     window.location.href = `https://${evt.target.value}.github.io/biketirol`;
 }
+
+// Instantiate elevation control.
+let controlElevation = L.control.elevation({}).addTo(map);
+
+// Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
+controlElevation.load("data/etappe12.gpx");
