@@ -70,3 +70,8 @@ footer nav {
     font-size: 1.1em;
     margin-bottom: 0.3em;
 }
+
+.bike-trail {
+    --ele-area: #3D9970;
+    --ele-bg: white;
+}
