@@ -82,3 +82,10 @@ const controlElevation = L.control.elevation({
 
 // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
 controlElevation.load("data/etappe12.gpx");
+
+
+// MiniMap mit eGrundkarte Tirol Sommer-Layer
+var gkTirol = new L.TileLayer("https://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png");
+var miniMap = new L.Control.MiniMap(gkTirol, { 
+    toggleDisplay: true, 
+}).addTo(map);
